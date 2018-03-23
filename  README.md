@@ -24,10 +24,14 @@ def perspect_transform(img, src, dst):
     return warped 
 ```
  we identify four Points from the Rover.Camera (img) to do the ***Perspective Transform***
- from this :
- ![alt text][image2]
- to this :
-![alt text][image4]
+ from this :  
+ 
+![alt text][image2]  
+ 
+ to this :  
+ 
+![alt text][image4]  
+
 which are :
 ([[14, 140], [301 ,140],[200, 96], [118, 96]]) and Then we Apply Color-Thresholding to identify  ***Navigable Terrains, Rocks And Obstacles***
 ***Color-Thresholding***
@@ -115,7 +119,7 @@ then we make new 3-Channel Visi Image for (Terrain , Rocks , Obstacles) Coordina
 [image3]: ./calibration_images/example_rock1.jpg 
 [image4]: ./misc/wrap.png
 [image5]: ./misc/color.png 
-[image5]: ./screen_shot.png 
+[image6]: ./screen_shot.png 
 
 ## Autonomous Mode :
 #### Drive.py:
@@ -140,6 +144,8 @@ The Stuck_counter starts counting when the speed is below < 0.2 if it reachs 104
 
 
 ### SceenShot:
+
 ![alt text][image6]
+
 #### Vedio:
 attached 
