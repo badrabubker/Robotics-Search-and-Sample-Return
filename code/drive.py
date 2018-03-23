@@ -79,11 +79,10 @@ class RoverState():
         self.near_sample = 0 # Will be set to telemetry value data["near_sample"]
         self.picking_up = 0 # Will be set to telemetry value data["picking_up"]
         self.send_pickup = False # Set to True to trigger rock pickup
-        self.random_direction_angles = 23000
-        self.stuck_counter = 0
-        self.stuck_wait_frames = 104
-        self.is_stuck = False
-        self.heading = False
+        self.stuck_counter = 0 #when the Rover is stuck it starts count 
+        self.stuck_wait_frames = 104 #when the stuck counter reaches 104 (which means 104 frames (4 sec) we should move)
+        self.is_stuck = False # boolean variable to indicate whether rover is stuck or not
+        self.heading = False #boolean Variable to indicate whether Rover is heading to a rock or not
 # Initialize our rover 
 Rover = RoverState()
 
